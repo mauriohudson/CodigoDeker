@@ -1,0 +1,888 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* configuracion de grid del index */
+
+.index__fondo {
+    background-image: url(img/imagenbar.jpg);
+    background-size: cover;
+    margin: 0;
+    font-family: 'Playfair Display SC', serif;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* hasta aca el grid del index */
+
+
+.img__logo {
+    width: 40px;
+    margin-top: 10px;
+}
+
+/* header + flex del index */
+
+.header {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #050d14;
+    opacity: .8;
+}
+
+
+.nav__list ul li {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+}
+
+/* hasta aca header flex del index */
+
+/* palabras del centro del main */
+.div__main {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.main {
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__main h1 {
+    font-size: 50px;
+}
+
+.div__main p {
+    font-size: 15px;
+    text-decoration: underline;
+}
+/* hasta aca el main */
+
+/* empieza el footer */
+
+.footer .grupo-1 .box figure img{
+    display: none;
+    width: 40px;
+    visibility: hidden;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #050d14;
+    opacity: .8;
+}
+
+.footer .grupo-1 .box h2 {
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .grupo-2 .box h3 {
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 2px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .grupo-2 .red-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo-2 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    margin-right: 2px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer .grupo-2 .red-social a:hover {
+    color: rgb(50, 219, 28);
+}
+
+.footer .grupo-3 {
+    background-color: #0d2033;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer .grupo-3 small{
+    font-size: 10px;
+}
+/* hasta aca el footer */
+
+/* pagina filosofia */
+.filosofia__fondo {
+    height: 100vh;
+    background-image: url(img/fondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main__filosofia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 68%;
+    color: white;
+}
+
+.div__filosofia {
+    background-color: black;
+    opacity: 70%;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.div__filosofia h1 {
+    text-decoration: underline;
+    padding-top: 50px;
+}
+
+.div__filosofia p {
+    margin-top: 25px;
+}
+    /* finaliza pagina filosofia */
+
+/* aca empieza pagina menu */
+
+.menu__fondo {
+    background-image: url(img/pexels-kelly-l-2898205.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.main__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "descargar-1"
+    "descargar-2";
+}
+
+.descargar-1 {
+    grid-area: descargar-1;
+}
+
+.descargar-2 {
+    grid-area: descargar-2;
+}
+
+.main__menu .descargar-3 a h2 {
+    font-size: 25px;
+    color: yellow;
+}
+
+.main__menu .descargar-3 a h2 p {
+    font-size: 15px;
+    color: white;
+    text-decoration: underline;
+
+}
+
+.main__menu .descargar-3 a {
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: .8;
+}
+
+.main__menu .descargar-1 a .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 150px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 15px;
+    border: 3px solid black;
+    transition: all 0.3s;
+    position: relative;
+    overflow:hidden;
+}
+
+.main__menu .descargar-2 a .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 150px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 15px;
+    border: 3px solid black;
+    transition: all 0.3s;
+    position: relative;
+    overflow:hidden;
+}
+
+.main__menu .descargar-3 a .btn:hover {
+    background-color: rgb(56, 190, 47);
+}
+
+.main__menu .descargar-3 a .btn::before {
+    content:"";
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:50px;
+    position: absolute;
+    transform:translatex(-100%) rotate(45deg);  
+    transition: all 0.1s;
+}
+
+.main__menu .descargar-3 a .btn:hover::before {
+    transform:translatex(100%) rotate(45deg); 
+}
+
+/* aca empieza pagina de contactos */
+
+.contactos__fondo {
+    background: linear-gradient(to right, black, #3f3f3f);
+}
+
+.main__contactos {
+    margin-top: 6.3rem;
+    margin-left: 3.1rem;
+}
+
+.formulario {
+    font-size: 15px;
+    color: white;
+    height: 37vh;
+    width: 10vw;
+}
+
+.mensaje {
+    height: 20vh;
+    width: 70vw;
+}
+/* fin de contacto */
+
+/* empiezo galeria */
+.galeria__fondo {
+    background-color: #050d14;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main__galeria {
+    height: 67vh;
+}
+
+.container__galeria {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 7rem;
+    padding: 10px;
+}
+
+.galeria__img1 {
+    visibility: hidden;
+}
+
+
+.galeria__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria__item:nth-child(1) {
+    grid-column-start: span 2;
+}
+
+.galeria__item:nth-child(5) {
+    grid-row-start: span 2;
+}
+
+/* termino galeria */
+
+
+/* HASTA ACA LO HICE EN UN TAMAÑO DE 320 A 378  */
+
+
+/* arrancamos con media queries, me costo un huevo */
+@media only screen and (min-width: 480px) and (max-width: 768px){
+/* empeze con el footer +grid por q me parecia lo mas dificil */
+    .footer {
+        width: 100%;
+        overflow: hidden;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 90% 10%;
+        grid-template-areas:
+        "header sidebar"
+        "footer footer";
+    }
+
+    .grupo-1 {
+        grid-area: header;
+    }
+
+    .grupo-2 {
+        grid-area: sidebar;
+    }
+
+    .grupo-3 {
+        grid-area: footer;
+    }
+
+    .footer .grupo-1 .box h2 {
+        font-size: 22px;
+    }
+
+    .footer .grupo-1 .box p {
+        font-size: 14px;
+    }
+
+    .footer .grupo-2 .box h3 {
+        font-size: 20px;
+    }
+
+    .footer .grupo-2 .red-social a{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-left: 5px;
+    }
+
+    .footer .grupo-2 .red-social a:hover {
+        color: rgb(50, 219, 28);
+    }
+
+    .footer .grupo-3 small {
+        font-size: 12px;
+    }
+
+/* aca empiezo con el nav y main */
+    .img__logo {
+        width: 70px;
+    }
+
+    .nav__link {
+        font-size: 20px;
+    }
+
+    .div__main {
+        margin-bottom: 250px;
+    }
+
+    .div__main h1 {
+        font-size: 85px;
+    }
+
+    .div__main p {
+        font-size: 30px;
+    }
+
+    /*pagina de  filosofia */
+    
+    .div__filosofia {
+        font-size: 20px;
+    }
+
+    /* pagina menu */
+
+    .main__menu .descargar-1 a .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        width: 170px;
+    }
+    
+    .main__menu .descargar-2 a .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        width: 170px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+
+/* arranco con las medidas antes mencionadas "lo mas dificil" */
+/* arranco por el nav */
+    .img__logo {
+    width:80px;
+    margin-left: 100px;
+    }
+
+
+    .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0;
+    }
+
+    .header div {
+    margin-right: 20px;
+    }
+
+    .nav__list ul li {
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 18px;
+    }
+    /* hasta aca el nav */
+    /* main */
+
+.main__menu .descargar-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .main__menu .descargar-1 a .btn {
+        height: 150px;
+        width: 170px;
+    }
+    
+    .main__menu .descargar-2 a .btn {
+        height: 150px;
+        width: 170px;
+    }
+
+
+    /* hasta aca el main */
+
+    /* este es el footer con las medidas antes mencionadas
+    e intentando hacer aparecer la imagen del footer */
+    .footer {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 85% 15%;
+        grid-template-areas:
+        "contactanos social"
+        "derechos derechos";
+    }
+
+    .grupo-1 {
+        grid-area: contactanos;
+    }
+
+    .grupo-2 {
+        grid-area: social;
+    }
+
+    .grupo-3{
+        grid-area: derechos;
+    }
+    /* esta parte la que mas costo, la de aparecer la img */
+    .footer .grupo-1 .box figure img{
+        width: 80px;
+        visibility: visible;
+        display: flex;
+        position: absolute;
+        margin-left: 7rem;
+        margin-top: 0.5rem;
+    }
+
+    .footer .grupo-2 .red-social a{
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        margin-right: 10px;
+    }
+
+    .footer .grupo-1 .box h2 {
+        font-size: 20px;
+        margin-left: 18rem;
+    }
+    
+    .footer .grupo-1 .box p {
+        margin-bottom: 2px;
+        margin-left: 18rem;
+    }
+
+    .footer .grupo-2 .box h3 {
+        font-size: 20px;
+    }
+
+    .footer .grupo-3 small{
+        font-size: 15px;
+    }
+    /* hasta aca el footer */
+    /* PAGINA DE FILOSOFIA */
+    .main__filosofia {
+        display: flex;
+        justify-content: flex-start;
+        height: 71%;
+        color: white;
+    }
+    
+    .div__filosofia {
+        text-align: left;
+        background-color: black;
+        opacity: 70%;
+        margin: 0;
+        padding: 0;
+        height: 450px;
+        width: 600px;
+        font-size: 17px;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .div__filosofia h1 {
+        padding-top: 70px;
+    }
+    
+    .div__filosofia p {
+        margin-top: 10px;
+    }
+
+    .main__menu {
+        font-size: 25px;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "descargar-1 descargar-2";
+    }
+
+    .descargar-1 {
+        height: 200px;
+        width: 250px;
+        margin-top: 250px;
+    }
+
+    .descargar-2 {
+        height: 200px;
+        width: 250px;
+        margin-top: 250px;
+    }
+
+    /*  FIN DEFILOSOFIA */
+
+    /* GALERIA */
+
+    .container__galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 93px ;
+        padding: 20px;
+    }
+
+    .galeria__img1 {
+        visibility: visible;
+    }
+
+    .galeria__img2 {
+        visibility: hidden;
+    }
+
+    .galeria__item:nth-child(1) {
+        grid-column-start: span 2;
+    }
+
+    .galeria__item:nth-child(10) {
+        grid-column-start: span 2;
+    }
+
+    .galeria__item:nth-child(4) {
+        grid-row-start: span 2;
+    }
+
+    .galeria__item:nth-child(9) {
+        grid-row-start: span 2;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+/* y hasta aca ya venia re canchero asi que me salio facil y rapido */
+/* HEADER */
+    .img__logo {
+    width: 80px;
+    margin-left: 200px;
+    }
+
+
+    .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    }
+
+    .header div {
+    margin-right: 220px;
+    }
+
+    .nav__list ul li {
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 20px;
+    }
+/* HASTA ACA EL HEADER */
+/* MAIN */
+    .main__menu .descargar-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__menu .descargar-1 a .btn {
+        height: 170px;
+        width: 190px;
+    }
+    
+    .main__menu .descargar-2 a .btn {
+        height: 170px;
+        width: 190px;
+    }
+/* HASTA ACA EL MAIN */
+/* FOOTER */
+    .footer {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 85% 15%;
+        grid-template-areas:
+        "contactanos social"
+        "derechos derechos";
+    }
+
+    .grupo-1 {
+        grid-area: contactanos;
+    }
+
+    .grupo-2 {
+        grid-area: social;
+    }
+
+    .grupo-3{
+        grid-area: derechos;
+    }
+
+
+    .footer .grupo-1 .box figure img{
+        width: 90px;
+        margin-top: 5px;
+        visibility: visible;
+        display: flex;
+        position: absolute;
+        margin-left: 13rem;
+    }
+
+    .footer .grupo-2 .red-social a{
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        margin-right: 10px;
+    }
+
+    .footer .grupo-1 .box h2 {
+        font-size: 27px;
+        margin-left: 29rem;
+    }
+    
+    .footer .grupo-1 .box p {
+        font-size: 17px;
+        margin-bottom: 2px;
+        margin-left: 29rem;
+    }
+
+    .footer .grupo-2 .box h3 {
+        font-size: 25px;
+    }
+
+    .footer .grupo-3 small{
+        font-size: 15px;
+    }
+    /* HASTA ACA EL FOOTER */
+    /* PAGINA DE FILOSOFIA */
+    .main__filosofia {
+        display: flex;
+        justify-content: flex-start;
+        height: 71%;
+        color: white;
+    }
+        
+    .div__filosofia {
+        text-align: left;
+        height: 500px;
+        width: 800px;
+        font-size: 22px;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+    
+    .div__filosofia h1 {
+        padding-top: 90px;
+    }
+        
+    .div__filosofia p {
+        margin-top: 10px;
+    }
+    /*  FIN DEFILOSOFIA */
+
+    /* pagina menu */
+    .main__menu {
+        font-size: 30px;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-gap: 250px;
+        grid-template-areas: 
+        "descargar-1 descargar-2";
+    }
+
+    .descargar-1 {
+        height: 300px;
+        width: 350px;
+        margin-top: 250px;
+    }
+
+    .descargar-2 {
+        height: 300px;
+        width: 350px;
+        margin-top: 250px;
+    }
+    /* empieza contactos */
+    .formulario {
+        font-size: 20px;
+        color: white;
+        height: 37vh;
+        width: 10vw;
+    }
+    
+    .mensaje {
+        height: 22vh;
+        width: 70vw;
+    }
+
+    /* GALERIA */
+    .container__galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 80px ;
+        padding: 20px;
+    }
+
+    .galeria__item:nth-child(1) {
+        grid-column-start: span 3;
+    }
+
+    .galeria__item:nth-child(7) {
+        grid-row-start: span 2;
+    }
+
+    /* GALERIA */
+    .container__galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 105px ;
+        padding: 20px;
+    }
+
+    .galeria__img2 {
+        visibility: visible;
+    }
+
+    .galeria__img1 {
+        visibility: visible;
+    }
+
+    .galeria__item:nth-child(1) {
+        grid-row-start: span 2;
+        grid-column-start:span 2;
+    }
+
+    .galeria__item:nth-child(5) {
+        grid-row-start: span 1;
+    }
+
+    .galeria__item:nth-child(15) {
+        grid-column-start: span 2;
+    }
+
+}

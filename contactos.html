@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/beer.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20fed15e3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>DEKER'S</title>
+</head>
+<body class="contactos__fondo">
+    <header class="header">
+        <a href="index.html">
+            <img class="img__logo" src="img/beer1.png" alt="logo">
+        </a>
+        <div>
+            <nav class="nav__list">
+                <ul>
+                    <li><a class="nav__link" href="index.html">Home</a></li>
+                        <li><a class="nav__link" href="filosofia.html">Filosofia</a></li>
+                            <li><a class="nav__link" href="galeria.html">Galeria</a></li>
+                        <li><a class="nav__link" href="menu.html">Menu</a></li>
+                    <li><a class="nav__link" href="contactos.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main__contactos">
+        <form action="">
+            <Fieldset class="formulario">
+                <legend>CONTACTANOS</legend>
+                <label for="nombre">Nombre</label>
+                <Input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre"></Input>
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Escriba su apellido">
+                <br>
+                <label for="apellido">E-mail</label>
+                <input type="text" name="E-mail" id="E-mail" placeholder="Escriba su E-mail">
+                <br>
+                <label for="mensaje">Mensaje</label>
+                <br>
+                <textarea class="mensaje"  name="mensaje" id="mensaje" placeholder="Escriba su mensaje" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar formulario">
+            </Fieldset>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="img/barrel.png" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>CONTACTANOS</h2>
+                    <P>Reservas@dekers.com</P>
+                        <p>+54 113223045</p>
+                    <p>Corriente N° 755. Sarandi, Bs As.</p>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <div class="box">
+                <h3>SEGUINOS EN</h3>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-3">
+            <small>&copy;2022 <b>Deker's</b> - Todos Los Derechos Reservados. </small>
+        </div>
+    </footer>
+</body>
+</html>
